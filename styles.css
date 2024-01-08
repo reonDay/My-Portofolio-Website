@@ -1,0 +1,450 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Navbar Style */
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, #00BFFF 70%,#87CEEB 70%);
+    padding: 10px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    font-size: 1.2em;
+}
+
+.navbar li {
+    margin-right: 20px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+.social-icons {
+    display: flex;
+    margin-right: 10px; /* Menambahkan jarak antara ikon sosial media dan elemen lain */
+}
+
+.social-icons a {
+    margin-right: 10px;
+    display: flex; /* Untuk mengatur ukuran ikon dan memberikan jarak */
+    align-items: center; /* Untuk mengatur ikon secara vertikal dalam kontainer */
+}
+
+.social-icons img {
+    width: 30px; /* Sesuaikan ukuran ikon sesuai kebutuhan */
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 5px; /* Menambahkan jarak antara ikon sosial media */
+}
+
+
+
+header {
+    position: relative;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+    height: 700px;
+    background: linear-gradient(to right, #00BFFF 70%,#87CEEB 70%);
+}
+
+.header-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right, #00BFFF 70%,#87CEEB 70%);
+    z-index: -1;
+}
+
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-container {
+    text-align: left;
+    margin-right: 300px;
+    margin-left: auto;
+    position: relative;
+    
+}
+.text-wrapper {
+    margin-top: 500px; /* Jarak antara typed-text dan static-text */
+    position: absolute;
+    left: 0;
+    text-align: left;
+    padding-left: 250px; /* Membuat sedikit padding dari kiri */
+}
+
+.static-text {
+    font-size: 1.6em;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.image-container {
+    margin-top: 100px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: 50px;
+    
+}
+
+#profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 5px solid #fff;
+}
+
+#profile-image .img{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.image-appear {
+    animation: imageAppear 2s ease-out;
+    opacity: 0;
+}
+
+.profile-name {
+    margin-top: 10px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/* CSS untuk bagian Portofolio */
+/* Styling untuk container section "portfolio" */
+.portfolio  {
+ text-align: center;
+}
+
+
+
+/* Styling untuk judul "Portofolio" */
+.portfolio h2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/* Mengatur display flex untuk container project */
+.portfolio .project {
+    display: inline-block; /* Menjadikan class "project" berjejer secara horizontal */
+    margin: 0 25px; /* Memberikan ruang di antara setiap project */
+    opacity: 0; /* Menyembunyikan elemen pada awalnya */
+    transition: opacity 1s ease-in-out; /* Animasi perubahan opacity */
+    border: 1px solid #333;
+}
+
+/* Styling untuk gambar di dalam project */
+.portfolio .project img {
+    width: 300px;
+    height: 200px;
+}
+
+/* Styling untuk judul proyek */
+.portfolio .project h3 {
+    margin-top: 10px;
+}
+
+/* Styling untuk deskripsi proyek */
+.portfolio .project p {
+    margin-top: 5px;
+}
+.gallery  {
+    text-align: center;
+    margin-bottom: 50px;
+
+}
+   
+   /* Styling untuk judul "Portofolio" */
+.gallery h2 {
+       margin-bottom: 20px;
+       text-align: center;
+}
+   
+   /* Mengatur display flex untuk container project */
+.gallery .foto {
+       display: inline-block; /* Menjadikan class "project" berjejer secara horizontal */
+       margin: 0 25px; /* Memberikan ruang di antara setiap project */
+       opacity: 0; /* Menyembunyikan elemen pada awalnya */
+       transition: opacity 1s ease-in-out; /* Animasi perubahan opacity */
+    
+}
+
+
+   
+   /* Styling untuk gambar di dalam project */
+.gallery .foto img {
+    width: 100%;
+    height: auto;
+}
+
+.fade-in {
+    animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+    animation: fadeOut 1s forwards;
+}
+
+
+.source-code {
+    text-align: center; 
+ 
+}
+.soruce-code h2{
+    margin-bottom: 20px;
+}
+
+.header-code{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #333;
+    margin: 0 auto;
+    max-width: 900px; 
+    width: 900px;
+    z-index: 1;
+
+}
+
+.language-info {
+    font-size: 14px;
+    color: #ccc; 
+}
+
+.code-container{
+    background-color: #292929;
+    border: 1px solid #ddd;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+    display: inline-block; 
+    text-align: left;
+    max-width: 900px;
+    width: 900px; 
+    margin: 0 auto;
+    
+
+}
+
+.source-code button{
+    background-color: #4CAF50; 
+    color: #fff; 
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.source-code button:hover{
+    background-color: #45a049;
+}
+
+code{
+    display: block;
+    white-space: pre-wrap;
+    font-size: 16px;
+    color: #fff;
+    font-family: 'Courier New', Courier, monospace;
+}
+pre {
+    margin: 0;
+}
+
+
+.python {
+    color: #3572A5;
+}
+
+.comment {
+    color: #4E9A06;
+}
+
+.keyword {
+    color: #CC0000;
+}
+
+.string {
+    color: #8F5902;
+}
+
+.built-in {
+    color: #2E8B57;
+}
+
+.skills-container {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 2px solid #3498db; 
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #f8f8f8; 
+}
+
+.skills h2{
+    text-align: center;
+    color: black;
+}
+
+.skill-header{
+    opacity: 0;
+    animation: fadeInAndOut 2s infinite;
+    font-weight: bold;
+    
+}
+.skill-item {
+    margin: 10px 0;
+    padding: 10px;
+    background-color: #fff; /* Ubah warna background sesuai keinginan Anda */
+    border: 1px solid #ddd; /* Ubah warna border sesuai keinginan Anda */
+    border-radius: 5px;
+    opacity: 0;
+    animation: fadeInAndOut 2s infinite;
+}
+
+.whatsapp-container{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.whatsapp-button{
+    width: 60px;
+    height: 60px;
+    background-color: #25d366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button img{
+    width: 50%;
+    height: auto;
+}
+.whatsapp-button:hover{
+    background-color: #128C7E;
+}
+
+footer {
+    background-color: #87CEFA;
+    color: #333;
+    padding: 20px 0;
+}
+
+.footer p{
+    font-weight: bold;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer-copyright {
+    margin-bottom: 20px; /* Sesuaikan margin sesuai kebutuhan Anda */
+}
+.menu-toggle {
+    display: none;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    display: block;
+    width: 24px;
+    height: 2px;
+    margin-bottom: 5px;
+    background-color: #333;
+  }
+  
+
+@keyframes imageAppear {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes fadeInAndOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
