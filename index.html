@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portofolio Saya</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="nav-list">
+                <li><a href="#typed-text">Home</a></li>
+                <li><a href="#portfolio">Project</a></li>
+                <li><a href="#source-code">Code</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#gallery">Galeri</a></li>
+                <li>| Pixcel Tech</li>
+            </ul>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/pixcel.n/"target="_blank" rel="noopener noreferrer">
+                    <img src="instagram1.avif" alt="Instagram">
+                </a>
+                <a href="https://www.linkedin.com/in/pixcel-narang-29b83b277/" target="_blank" rel="noopener noreferrer">
+                    <img src="linkedin.png" alt="LinkedIn">
+                </a>
+                <a href="https://github.com/reonDay" target="_blank" rel="noopener noreferrer">
+                    <img src="github.png" alt="GitHub">
+                </a>
+            </div>
+        </nav>
+        <div class="header-background"></div>
+        <div class="header-content">
+            <div class="text-container">
+                <h1 id="typed-text"></h1>
+    
+            </div>
+            <div class="text-wrapper">
+                <p class="static-text"><strong>Hello, My name is Pixcel Narang</strong>.<br> 
+                <strong>I have a Experience in the world of coding is 2 Years</strong>.<br>
+                <strong>I am a new, but i have a qualification to Work</strong></p>
+            </div>            
+            <div class="image-container">
+                <img src="pixcel.jpeg" alt="Foto Saya" id="profile-image">
+                <p class="profile-name"><strong>Pixcel Narang</strong></p>
+                
+                
+            </div>
+        </div>
+    </header>
+
+    <!-- Bagian Portofolio -->
+    <section class="portfolio" id="portfolio">
+        <h2>My Projects</h2>
+        <div class="project fade-in">
+            <img src="a.jpeg" alt="Project 1">
+            <h3>Fintech Project</h3>
+            <p>This is project to make Website Finance integration with AI</p>
+        </div>
+        <div class="project fade-in">
+            <img src="b.jpeg" alt="Project 2">
+            <h3>E-Comic Project</h3>
+            <p>This is project to make Website for read comic</p>
+        </div>
+        <div class="project fade-in">
+            <img src="c.jpeg" alt="Project 2">
+            <h3>Predict Stock AI</h3>
+            <p>This is project to predict stock AI</p>
+        </div>
+    </section>
+    
+ 
+  
+    <!-- Bagian Contact -->
+    <section class="source-code" id="source-code">
+        <h2>Free Source Code</h2>
+        <div class="header-code" id="headerCode">
+            <div class="language-info">Python</div>
+            <button onclick="copyCode()">Copy Code</button>
+        </div>
+        <div class="code-container" id="codeContainer">
+            <pre>
+                <code class="python">
+        
+                    <span class="keyword">import</span> pandas <span class="keyword">as</span> pd
+                    <span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt
+                    <span class="keyword">import</span> seaborn <span class="keyword">as</span> sns
+        
+                    data = pd.read_csv('nama_file.csv')
+        
+                    <span class="built-in">print</span>(data.head())
+        
+                    <span class="built-in">print</span>(<span class="string">"\nInformasi dataset:"</span>)
+                    <span class="built-in">print</span>(data.info())
+
+                    <span class="built-in">print</span>(<span class="string">"\nStatistik deskriptif:"</span>)
+                    <span class="built-in">print</span>(data.describe())
+        
+                    sns.countplot(x='kolom_kategori', data=data)
+                    plt.title(<span class="string">'Diagram Batang Jumlah Data per Kategori'</span>)
+                    plt.show()
+
+                    sns.scatterplot(x='kolom_numerik1', y='kolom_numerik2', data=data)
+                    plt.title(<span class="string">'Diagram Sebaran antara Kolom Numerik 1 dan 2'</span>)
+                    plt.show()
+        
+                </code>
+            </pre>
+        </div>
+        
+        <!-- Isi sesuai kebutuhan Anda -->
+    </section>
+
+
+    <!-- Bagian Skills -->
+    <section class="skills" id="skills">
+        <h2>Skills</h2>
+        <div class="skills-container">
+        <div class="skill-header">Programming Language & Framework</div>
+        <div class="skill-item">JavaScript</div>
+        <div class="skill-item">PHP</div>
+        <div class="skill-item">Laravel</div>
+        <div class="skill-item">NodeJS</div>
+        <div class="skill-item">ExpressJS</div>
+        <div class="skill-item">ReactJS</div>
+        <div class="skill-item">C#</div>
+        <div class="skill-item">Python</div>
+        <div class="skill-item">Java</div>
+        <div class="skill-item">Flask</div>
+        <div class="skill-item">Dart</div>
+        <div class="skill-item">Flutter</div>
+        <div class="skill-item">C++</div>
+        <div class="skill-item">TensorFlow</div>
+        <div class="skill-item">Scikit-Learn</div>
+        <div class="skill-item">Numpy</div>
+        <div class="skill-header">Jobdesc</div>
+        <div class="skill-item">Web Development</div>
+        <div class="skill-item">Desktop Programming</div>
+        <div class="skill-item">Data Analyst</div>
+        <div class="skill-item">Data Science</div>
+        <div class="skill-item">AI Programming</div>
+        <div class="skill-item">Cyber Security</div>
+        <div class="skill-item">Web Scraper</div>
+        </div>
+    </section>
+
+    <!-- <section class="gallery" id="gallery">
+        <h2>Gallery</h2>
+        <div class="foto fade-in">
+            <img src="https://picsum.photos/300/200" alt="Project 1">
+        </div>
+        <div class="foto fade-in">
+            <img src="https://picsum.photos/300/200" alt="Project 1">
+        </div>
+        <div class="foto fade-in">
+            <img src="https://picsum.photos/300/200" alt="Project 1">
+        </div>
+        <div class="foto fade-in">
+            <img src="https://picsum.photos/300/200" alt="Project 1">
+        </div>
+        <div class="foto fade-in">
+            <img src="https://picsum.photos/300/200" alt="Project 1">
+        </div>
+        <div class="foto fade-in">
+            <img src="https://picsum.photos/300/200" alt="Project 1">
+        </div>
+    </section> -->
+    
+    <!-- Bagian Galeri -->
+   
+    <div class="whatsapp-container">
+        <div id="whatsapp-button" class="whatsapp-button">
+             <img src="whatsapp.jpg" alt="Whatsapp">
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+            <div class="footer-copyright">
+                <h2 align="center">&copy; 2023 Pixcel Tech. All Rights Reserved.</h2>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>AOS.init();</script>
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
