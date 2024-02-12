@@ -4,11 +4,7 @@ const textList = [
     "Welcome To My Portofolio",
     "I Am Programmer",
     "I Have Skills",
-    "Web Development",
-    "Cyber Security",
-    "Data Science",
-    "AI Development",
-    "Desktop Development"
+    "Data Science"
 ];
 
 let textIndex = 0;
